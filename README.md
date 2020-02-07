@@ -4,7 +4,7 @@
 
 ``` bash
 # install dependencies
-$ npm run install  安装依赖
+$ npm install  安装依赖
 
 # serve with hot reload at localhost:3000
 $ npm run dev  启动项目
