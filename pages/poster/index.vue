@@ -49,11 +49,16 @@ export default {
   methods: {
     makePoster() {},
     drawPoster() {
+      // 拿到canvas元素
       let c = document.getElementById("myCanvas");
+      // 拿到canvas2d幕布
       let ctx = c.getContext("2d");
+
+      // 图片加载完之后  使用canvas幕布将图片渲染到canvs里面
       let bg_img = new Image();
       bg_img.src = this.entity.backgroud_image;
       bg_img.onload = () => {
+        // ctx.drawImage(图片对象, 图片渲染位置x轴, 图片渲染y轴，图片的宽度,图片的高度)
         ctx.drawImage(bg_img, 0, 0, 800, 900);
         // ctx.zIndex = "1";
         ctx.textBaseline = "top";
